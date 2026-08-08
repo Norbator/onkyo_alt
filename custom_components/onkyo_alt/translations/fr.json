@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Onkyo Alt",
+        "data": {
+          "host": "Hôte"
+        },
+        "data_description": {
+          "host": "Adresse IP de l'ampli. La découverte par diffusion UDP ne fonctionne pas en Podman rootless : saisir l'adresse manuellement."
+        }
+      },
+      "configure_receiver": {
+        "title": "Configurer l'ampli"
+      }
+    },
+    "error": {
+      "cannot_connect": "Échec de la connexion",
+      "unknown": "Erreur inattendue"
+    },
+    "abort": {
+      "already_configured": "Cet ampli est déjà configuré"
+    }
+  },
+  "entity": {
+    "number": {
+      "dialog_enhancement": {
+        "name": "Amélioration des dialogues"
+      }
+    }
+  }
+}

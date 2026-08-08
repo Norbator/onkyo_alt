@@ -1,0 +1,21 @@
+name: Release
+
+# HACS lit la version depuis manifest.json, pas depuis le tag.
+# Ce workflow refuse de publier si les deux divergent.
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  check-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Manifest version must match the tag
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          MANIFEST=$(jq -r .version custom_components/onkyo_alt/manifest.json)
+          echo "tag=$TAG manifest=$MANIFEST"
+          [ "${TAG#v}" = "$MANIFEST" ] || {
+            echo "::error::tag ${TAG} != manifest ${MANIFEST}"; exit 1; }

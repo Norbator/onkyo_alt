@@ -1,0 +1,24 @@
+Onkyo Alt
+=========
+
+Ce dépôt est une distribution alternative, pas une amélioration. Il existe
+uniquement pour porter des commandes ISCP qui ne sont pas (encore) proposées
+ou fusionnées en amont. Tout le mérite de la conception et de la
+réalisation revient aux auteurs originaux.
+
+Il contient deux œuvres dérivées :
+
+1. custom_components/onkyo_alt/ dérive de l'intégration "onkyo" de
+   Home Assistant Core (https://github.com/home-assistant/core),
+   Copyright the Home Assistant authors, sous licence Apache-2.0.
+
+2. Il s'appuie sur aioonkyo_alt, fork de aioonkyo
+   (https://github.com/arturpragacz/aioonkyo) par Artur Pragacz,
+   sous licence GPL-3.0-only.
+
+L'ensemble combiné liant du code GPL-3.0-only, ce dépôt est distribué dans
+sa totalité sous GPL-3.0-only. Les mentions Apache-2.0 des fichiers dérivés
+du cœur de Home Assistant sont conservées ci-dessus comme cette licence
+l'exige.
+
+Ceci est un résumé, pas un avis juridique.

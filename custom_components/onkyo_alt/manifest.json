@@ -1,0 +1,22 @@
+{
+  "domain": "onkyo_alt",
+  "name": "Onkyo Alt",
+  "version": "0.1.0",
+  "codeowners": [
+    "@VOTRE_COMPTE"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "network"
+  ],
+  "documentation": "https://github.com/VOTRE_COMPTE/onkyo_alt",
+  "integration_type": "device",
+  "iot_class": "local_push",
+  "loggers": [
+    "aioonkyo_alt"
+  ],
+  "requirements": [
+    "aioonkyo_alt==0.4.0.post1"
+  ],
+  "issue_tracker": "https://github.com/VOTRE_COMPTE/onkyo_alt/issues"
+}
