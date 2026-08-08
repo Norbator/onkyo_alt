@@ -3,13 +3,13 @@
   "name": "Onkyo Alt",
   "version": "0.1.0",
   "codeowners": [
-    "@VOTRE_COMPTE"
+    "@Norbator"
   ],
   "config_flow": true,
   "dependencies": [
     "network"
   ],
-  "documentation": "https://github.com/VOTRE_COMPTE/onkyo_alt",
+  "documentation": "https://github.com/Norbator/onkyo_alt",
   "integration_type": "device",
   "iot_class": "local_push",
   "loggers": [
@@ -18,5 +18,5 @@
   "requirements": [
     "aioonkyo_alt==0.4.0.post1"
   ],
-  "issue_tracker": "https://github.com/VOTRE_COMPTE/onkyo_alt/issues"
+  "issue_tracker": "https://github.com/Norbator/onkyo_alt/issues"
 }

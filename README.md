@@ -1,7 +1,7 @@
 # Onkyo Alt
 
 Distribution alternative de l'intégration Onkyo de Home Assistant, adossée à
-[`aioonkyo_alt`](https://github.com/VOTRE_COMPTE/aioonkyo_alt), fork de
+[`aioonkyo_alt`](https://github.com/Norbator/aioonkyo_alt), fork de
 [`aioonkyo`](https://github.com/arturpragacz/aioonkyo) par Artur Pragacz.
 
 **Ce n'est pas une amélioration de l'intégration officielle.** C'est la même
