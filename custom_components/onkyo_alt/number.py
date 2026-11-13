@@ -97,6 +97,12 @@ class OnkyoNumber(CoordinatorEntity[NumericSettingCoordinator], NumberEntity):
 
         identifier = coordinator.manager.info.identifier
         self._attr_unique_id = f"{identifier}-{description.key}"
+        # Comme les autres entités Onkyo (qui ne sont rattachées à aucun
+        # appareil), le nom commence par le modèle de l'ampli : la traduction
+        # contient « {model_name} … ».
+        self._attr_translation_placeholders = {
+            "model_name": coordinator.manager.info.model_name
+        }
 
     @property
     @override

@@ -102,7 +102,7 @@
   "entity": {
     "number": {
       "dialog_enhancement": {
-        "name": "Dialog enhancement"
+        "name": "{model_name} Dialog enhancement"
       }
     }
   }

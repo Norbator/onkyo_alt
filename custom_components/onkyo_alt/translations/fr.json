@@ -25,7 +25,7 @@
   "entity": {
     "number": {
       "dialog_enhancement": {
-        "name": "Amélioration des dialogues"
+        "name": "{model_name} Amélioration des dialogues"
       }
     }
   },
