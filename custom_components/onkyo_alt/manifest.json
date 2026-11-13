@@ -1,11 +1,17 @@
 {
   "domain": "onkyo_alt",
   "name": "Onkyo Alt",
-  "version": "0.1.2",
+  "version": "0.1.3",
+  "categories": [
+    "media_entertainment.speakers_audio"
+  ],
   "codeowners": [
     "@Norbator"
   ],
   "config_flow": true,
+  "connectivity": [
+    "network"
+  ],
   "dependencies": [
     "network"
   ],

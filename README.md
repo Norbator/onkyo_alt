@@ -31,6 +31,21 @@ image conteneur dérivée n'est nécessaire.
 > intégrations ouvriraient chacune une connexion eISCP vers le même ampli,
 > ce qui fait décrocher la connexion.
 
+## Compatibilité
+
+Home Assistant **2026.11 et suivantes**. Le code suit l'intégration Onkyo du
+cœur en version 2026.11.1, y compris `async_setup_entry` / `async_unload_entry`
+qui ne renvoient plus rien et `async_unload_platforms_or_raise`, absents de
+2026.10. Pour Home Assistant 2026.10, utiliser onkyo_alt **0.1.2**.
+
+Les tests du cœur, adaptés à onkyo_alt :
+
+```bash
+uv venv -p 3.14
+uv pip install homeassistant==2026.11.1 pytest-homeassistant==2026.11.1 aioonkyo_alt==0.4.0.post2
+uv run --no-project python -m pytest -q
+```
+
 ## Ajouter un réglage
 
 1. Sniffer le code réel sur votre ampli — ne jamais se fier à une table de
