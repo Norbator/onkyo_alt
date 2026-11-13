@@ -1,7 +1,7 @@
 {
   "domain": "onkyo_alt",
   "name": "Onkyo Alt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "codeowners": [
     "@Norbator"
   ],
@@ -16,7 +16,7 @@
     "aioonkyo_alt"
   ],
   "requirements": [
-    "aioonkyo_alt==0.4.0.post1"
+    "aioonkyo_alt==0.4.0.post2"
   ],
   "issue_tracker": "https://github.com/Norbator/onkyo_alt/issues"
 }
