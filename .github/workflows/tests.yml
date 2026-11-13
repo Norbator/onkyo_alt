@@ -12,10 +12,13 @@ jobs:
     name: HA 2026.11.1
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v6
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v7
         with:
           python-version: "3.14"
+          # Pas de uv.lock ni de requirements*.txt : le cache suit les
+          # dépendances déclarées dans le manifest.
+          cache-dependency-glob: custom_components/onkyo_alt/manifest.json
       - name: Install
         run: |
           uv venv
