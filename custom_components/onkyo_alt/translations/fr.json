@@ -28,5 +28,16 @@
         "name": "Amélioration des dialogues"
       }
     }
+  },
+  "exceptions": {
+    "cannot_connect": {
+      "message": "Impossible de se connecter à l'ampli {host}."
+    },
+    "interview_error": {
+      "message": "Erreur inattendue lors de l'interrogation de l'ampli {host}."
+    },
+    "interview_timeout": {
+      "message": "Délai dépassé lors de l'interrogation de l'ampli {host}."
+    }
   }
 }
